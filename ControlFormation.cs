@@ -71,7 +71,7 @@ namespace Presenter
     }
 
     
-    internal class ControlButtonInfo
+    public class ControlButtonInfo
     {
         public int Id { get; set; }
         public string Caption { get; set; }
@@ -90,8 +90,13 @@ namespace Presenter
         
     }
 
-    public class Configuration
+    public class AConfiguration
     {
-        public List<Pest> Pests { get; set; }
+        public List<ControlButtonInfo> Configuration { get; set; }
+        public  int Buttonheight { get; set; }
+        public int ButtonWidth { get; set; }
+        public int VerticleGap { get; set; }
+        public int HorizontolGap { get; set; }
+        public int MaxButtonInRow { get; set; }
     }
 }

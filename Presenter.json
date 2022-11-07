@@ -1,34 +1,39 @@
 {
-  "configuration": [
+  "Configuration": [
     {
-      "id": "1",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 1,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     },
     {
-      "id": "2",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 2,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     },
     {
-      "id": "3",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 3,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     },
     {
-      "id": "4",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 4,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     },
     {
-      "id": "5",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 5,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     },
     {
-      "id": "6",
-      "caption": "Water",
-      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Id": 6,
+      "Caption": "Water",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
     }
-  ]
+  ],
+  "Buttonheight": 500,
+  "ButtonWidth": 600,
+  "VerticleGap": 100,
+  "HorizontolGap": 100,
+  "MaxButtonInRow": 4
 }
