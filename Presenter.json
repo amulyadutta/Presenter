@@ -1,0 +1,34 @@
+{
+  "configuration": [
+    {
+      "id": "1",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    },
+    {
+      "id": "2",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    },
+    {
+      "id": "3",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    },
+    {
+      "id": "4",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    },
+    {
+      "id": "5",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    },
+    {
+      "id": "6",
+      "caption": "Water",
+      "image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+    }
+  ]
+}
