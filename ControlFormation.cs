@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Speech;
+﻿
+using LibVLCSharp.Shared;
 using System.Speech.Synthesis;
+
+using NAudio.Wave;
+using System.Windows.Forms;
 
 namespace Presenter
 {
     internal class ControlFormation
     {
         private readonly List<ControlButtonInfo> info = null;
-        private readonly int height;
-        private readonly int width;
+        
 
-        private double singleButtonHeight;
-        private double singleButtonWidth;
+        
         public ControlFormation(List<ControlButtonInfo> info, int height, int width)
         {
             this.info = info ?? throw new ArgumentNullException(nameof(info));
-            this.height = height;
-            this.width = width;
+           
         }
 
         
@@ -47,20 +43,38 @@ namespace Presenter
             return button;
         }
 
+        void PlayMusic(string wavFile)
+        {
+            System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer(wavFile);
+            soundPlayer.Play();
+            soundPlayer.Play();
+            soundPlayer.Dispose();
+        }
+
         private void Button_Click(object sender, EventArgs e)
         {
-            
-            
             Button button = (sender as Button);
-
             button.Text = "Playing";
 
-            PromptBuilder promptBuilder = new PromptBuilder ( new System.Globalization.CultureInfo("en-US"));
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.SetOutputToDefaultAudioDevice();
-            synth.Speak(button.Name);
-            synth.Speak(button.Name);
-            synth.Dispose();
+            var control = info.Where(x => x.Caption == button.Name).FirstOrDefault();
+            if (string.IsNullOrEmpty(control.PlayFile))
+            {
+                PromptBuilder promptBuilder = new PromptBuilder(new System.Globalization.CultureInfo("en-US"));
+                SpeechSynthesizer synth = new SpeechSynthesizer();
+                synth.SetOutputToDefaultAudioDevice();
+                synth.Speak(button.Name);
+                synth.Speak(button.Name);
+                synth.Dispose();
+            }
+            else
+            {
+                
+                PlayMusic(control.PlayFile);
+            }
+
+            
+
+            
 
             button.Text = "";
 

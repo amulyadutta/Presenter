@@ -2,8 +2,9 @@
   "Configuration": [
     {
       "Id": 1,
-      "Caption": "Water",
-      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg"
+      "Caption": "Wateraaa",
+      "Image": "D:\\Working\\Code\\Guide\\Icons\\Bathroom.jpeg",
+      "PlayFile": "D:\\Working\\Code\\Guide\\Voice\\lync_ringtone7.wav"
     },
     {
       "Id": 2,
